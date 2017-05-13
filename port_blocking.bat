@@ -23,7 +23,6 @@ netsh ipsec static add filteraction name=block_act action=block
 echo Creating the block action
 netsh ipsec static add rule name=killport policy=BLOCK_PORT filterlist=close_port filteraction=block_act
 netsh ipsec static set policy name=BLOCK_PORT assign=y
-
 echo Motion assigned
 echo Press any key to quit...
 pause>nul 
