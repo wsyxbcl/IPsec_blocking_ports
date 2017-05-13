@@ -1,11 +1,9 @@
 @echo off
-chcp 65001
 title Closing port 445, 135, 137, 138, 139
 echo Closing ports using Windows IPsec
 echo Make sure that you are using the administrative mode
-echo 此脚本利用Windows IP安全策略关闭脚本
-echo 请使用管理员模式运行
 pause
+
 netsh ipsec static add policy name=BLOCK_PORT
 echo Creating policy
 netsh ipsec static add filterlist name=close_port
@@ -28,5 +26,4 @@ netsh ipsec static set policy name=BLOCK_PORT assign=y
 
 echo Motion assigned
 echo Press any key to quit...
-echo 请按任意键关闭...
 pause>nul 
