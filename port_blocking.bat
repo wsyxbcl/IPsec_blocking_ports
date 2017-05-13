@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 chcp 65001
 title Closing port 445, 135, 137, 138, 139
 echo Closing ports using Windows IPsec
