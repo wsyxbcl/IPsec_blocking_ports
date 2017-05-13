@@ -1,9 +1,10 @@
-@echo off
+ï»¿@echo off
+chcp 65001
 title Closing port 445, 135, 137, 138, 139
 echo Closing ports using Windows IPsec
 echo Make sure that you are using the administrative mode
-echo ´Ë½Å±¾ÀûÓÃWindows IP°²È«²ßÂÔ¹Ø±Õ½Å±¾
-echo ÇëÊ¹ÓÃ¹ÜÀíÔ±Ä£Ê½ÔËÐÐ
+echo æ­¤è„šæœ¬åˆ©ç”¨Windows IPå®‰å…¨ç­–ç•¥å…³é—­è„šæœ¬
+echo è¯·ä½¿ç”¨ç®¡ç†å‘˜æ¨¡å¼è¿è¡Œ
 pause
 netsh ipsec static add policy name=BLOCK_PORT
 echo Creating policy
@@ -27,5 +28,5 @@ netsh ipsec static set policy name=BLOCK_PORT assign=y
 
 echo Motion assigned
 echo Press any key to quit...
-echo Çë°´ÈÎÒâ¼ü¹Ø±Õ...
+echo è¯·æŒ‰ä»»æ„é”®å…³é—­...
 pause>nul 
