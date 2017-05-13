@@ -5,4 +5,5 @@ block common risky port 445, 135, 137, 138 and 139
 To against the ONION on the Windows system by blocking some risky ports.  
 Just download the .bat file and use administrative mode to run.  
 下载.bat脚本文件并使用管理员模式运行即可  
+Please don't blame me for any future problem.  
 by wsyxbcl(yx_chai@whu.edu.cn)
